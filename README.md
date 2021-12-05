@@ -1,6 +1,7 @@
 # Blog Portifolio
 
-Desenvolido utilizando Tailwind CSS e Next.js
+Desenvolvido utilizando Tailwind CSS e Next.js.
+
 [Versão Online](https://portifolio-blog.vercel.app/)
 
 ## Next.js + Tailwind CSS Example
