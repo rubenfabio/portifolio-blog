@@ -5,14 +5,7 @@ import Image from 'next/image';
 import { useRouter } from 'next/router';
 import { useEffect } from 'react';
 import Logo from '../../public/react-logo.png';
-
-const navigation = [
-  { name: 'Home', href: '/' },
-  { name: 'Product', href: '#' },
-  { name: 'Features', href: '#' },
-  { name: 'Marketplace', href: '#' },
-  { name: 'Company', href: '#' },
-];
+import { navigation } from '../Navbar/NavItens';
 
 function componentDidMount() {}
 function NavBar() {
