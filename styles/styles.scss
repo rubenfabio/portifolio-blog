@@ -1,0 +1,7 @@
+$bg-color: #000000;
+$bg-gradient: linear-gradient(147deg, #000000 0%, #2c3e50 74%);
+
+.bg-hero {
+  background-color: $bg-color;
+  background-image: $bg-gradient;
+}
