@@ -1,11 +1,19 @@
 import React from 'react';
+import Link from 'next/link';
+import { navigation } from '../Navbar/NavItens';
 
 function Footer() {
   return (
     <>
       <footer className="mx-auto container xl:px-20 lg:px-12 sm:px-6 px-4 px-4 py-12">
         <div className="flex flex-col items-center justify-center">
-          <div></div>
+          <div>
+            {navigation.map((item) => (
+              <Link kay={item.name} href={item.href}>
+                {item.name}
+              </Link>
+            ))}
+          </div>
           <div className="flex flex-wrap sm:gap-10 gap-8 items-center justify-center mt-8">
             <p className="hover:text-gray-500 text-base cursor-pointer leading-4 text-gray-800">
               About
