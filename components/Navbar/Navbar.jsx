@@ -7,7 +7,6 @@ import { useEffect } from 'react';
 import Logo from '../../public/react-logo.png';
 import { navigation } from '../Navbar/NavItens';
 
-function componentDidMount() {}
 function NavBar() {
   const router = useRouter();
   const [isOpen, setIsOpen] = useState(false);
