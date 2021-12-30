@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import { navigation } from '../Navbar/NavItens';
+import CookieConsent, { Cookies } from 'react-cookie-consent';
 
 function Footer() {
   return (
@@ -9,7 +10,7 @@ function Footer() {
         <div className="flex flex-col items-center justify-center">
           <div>
             {navigation.map((item) => (
-              <Link kay={item.name} href={item.href}>
+              <Link key={item.name} href={item.href}>
                 {item.name}
               </Link>
             ))}
@@ -96,6 +97,18 @@ function Footer() {
             </div>
           </div>
         </div>
+        <CookieConsent
+          location="bottom"
+          buttonText="Aceitar"
+          cookieName="myAwesomeCookieName2"
+          style={{ background: 'rgb(43 55 59 / 83%)' }}
+          buttonStyle={{ color: '#4e503b', fontSize: '13px' }}
+          expires={150}
+        >
+          Este site utiliza cookies para permitir uma melhor experiência por
+          parte do utilizador. Ao navegar no site estará a consentir a sua
+          utilização.{' '}
+        </CookieConsent>
       </footer>
     </>
   );

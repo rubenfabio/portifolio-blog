@@ -25,7 +25,7 @@ function NavBar() {
   };
 
   return (
-    <>
+    <header>
       <nav
         className={
           navbar
@@ -53,7 +53,7 @@ function NavBar() {
                     <Link key={item.name} href={item.href}>
                       <a
                         className={
-                          router.pathname == item.href
+                          router.pathname == '/' + item.href
                             ? 'cursor-pointer from-blue-600 to-purple-500 bg-gradient-to-r text-white  px-3 py-2 rounded-md text-sm font-medium'
                             : 'cursor-pointer hover:bg-blue-600 text-white hover:text-white px-3 py-2 rounded-md text-sm font-medium'
                         }
@@ -151,7 +151,7 @@ function NavBar() {
           )}
         </Transition>
       </nav>
-    </>
+    </header>
   );
 }
 
